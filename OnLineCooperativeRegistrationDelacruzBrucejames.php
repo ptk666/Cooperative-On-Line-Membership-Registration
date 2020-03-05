@@ -3,10 +3,10 @@
 <head>
 	<title>Machine Problem | PHP</title>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 </head>
 <style>
 	hr {
@@ -41,6 +41,8 @@
 			$coborrower =		$_POST['coborrower'];
 		}
 
+
+
 	?>
 </div>
 
@@ -69,7 +71,7 @@
 							</div>
 							<input class="form-control" type="text" name="lastname" required placeholder="Last">
 							<input class="form-control" type="text" name="firstname" required placeholder="First">
-							<input class="form-control" type="text" name="middlename" required placeholder="M.I">
+							<input class="form-control" type="text" name="middlename" required placeholder="Middle">
 						</div>
 
 						<div class="input-group">
@@ -83,14 +85,14 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text">Contact Number:</span>
 							</div>
-							<input class="form-control" type="tel" name="contactnumber" required>
+							<input class="form-control" type="tel" name="contactnumber" placeholder="ex. 09123456790" required>
 						</div>
 
 						<div class="input-group date">
 							<div class="input-group-prepend">
 								<span class="input-group-text">Date of Birth:</span>
 							</div>
-							<input class="form-control" type="date" name="dateofbirth" required>
+							<input class="form-control" type="text" name="dateofbirth" id="dateofbirth" required>
 						</div>
 
 						<div class="input-group">
@@ -178,7 +180,7 @@
 
 <script>
 	$(document).ready(function(){
-
+		$('#dateofbirth').datepicker({dateFormat: 'yy-mm-dd'});
 	});
 </script>
 
