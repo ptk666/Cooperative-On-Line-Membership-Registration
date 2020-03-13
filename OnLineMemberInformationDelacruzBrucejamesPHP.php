@@ -63,8 +63,8 @@
 
 				</div>
 
-				<div class="col-sm-3"></div>
-				<div class="col-sm-6">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
 					
 					<center><h2><b>Member Information</b></h2></center>
 
@@ -155,7 +155,7 @@
 					</center>
 
 				</div>
-				<div class="col-sm-3"></div>
+				<div class="col-sm-4"></div>
 				
 			</div>
 		</div>
